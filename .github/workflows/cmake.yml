@@ -70,7 +70,7 @@ jobs:
       run: cmake --install build --strip --prefix install
 
     - name: Upload
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: unshield-${{github.sha}} (${{matrix.platform.name}})
         path:  install
